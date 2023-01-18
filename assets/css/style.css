@@ -1,0 +1,112 @@
+/* ===== Global Styles ===== */
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto";
+  color: #323A45;
+}
+
+body {
+  background-color: #FFF;
+}
+
+.styleH1 {
+  font-size: 0.9rem;
+  padding-left: 40px;
+}
+
+h1 {
+  font-size: 2rem;
+  padding: 20px 20px;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #ff3571;
+  padding-left: 150px;
+}
+
+p {
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ===== Header Styles ===== */
+header section {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+header .fallingManImage {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+header .logoFlex {
+  display: flex;
+}
+
+/* ===== Main Styles ===== */
+/* ===== First Area (h2 and scroll text) ===== */
+main {
+  position: relative;
+}
+main .h2PositionAbsulute h2 {
+  position: absolute;
+  top: -300px;
+  left: 150px;
+  font-size: 4rem;
+}
+main .imageGallery {
+  margin: 10vh 0 10vh 0;
+}
+main .everyIdeaAndLightbulb {
+  display: flex;
+  padding-bottom: 10vh;
+}
+main .everyIdeaAndLightbulb h2 {
+  max-width: 30vw;
+  padding-left: 150px;
+}
+main .everyIdeaAndLightbulb p {
+  max-width: 50vw;
+  padding-left: 10vw;
+}
+main .afterSeveralWeeksText h2 {
+  width: 60vw;
+  padding: 150px;
+}
+main .styleFourTexts {
+  margin: 25px 150px;
+  display: flex;
+  flex-direction: column;
+}
+main .styleFourTexts p {
+  max-width: 25vw;
+  padding-bottom: 30px;
+}
+main .styleFourTexts h3 {
+  padding-bottom: 10px;
+  padding-left: -200px;
+}
+main .styleFourTexts span {
+  padding-right: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
