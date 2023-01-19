@@ -3,6 +3,10 @@
   font-family: "roboto";
   src: url("../fonts/Roboto-Regular.ttf");
 }
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../fonts/Roboto-Bold.ttf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,23 +21,30 @@ body {
 
 .styleH1 {
   font-size: 0.9rem;
-  padding-left: 40px;
+  display: block;
 }
 
 h1 {
   font-size: 2rem;
-  padding: 20px 20px;
+  padding: 25px 0 0 70px;
 }
 
 h2 {
   font-size: 3rem;
 }
 
+h4 {
+  font-size: 3.5rem;
+  color: #dddddd;
+  padding-bottom: 40px;
+  font-family: "roboto-bold";
+}
+
 a {
   text-decoration: none;
   font-size: 0.9rem;
   color: #ff3571;
-  padding-left: 150px;
+  padding-top: 100px;
 }
 
 p {
@@ -47,6 +58,25 @@ p {
   justify-content: space-between;
 }
 
+.flexContainer2 {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 200px;
+}
+.flexContainer2 p {
+  max-width: 37vw;
+}
+.flexContainer2 h3 {
+  padding: 20px 0;
+}
+
+.flexContainer3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 /* ===== Header Styles ===== */
 header section {
   display: flex;
@@ -58,20 +88,30 @@ header .fallingManImage {
   top: 0px;
   right: 0px;
 }
-header .logoFlex {
-  display: flex;
+header #logo {
+  position: fixed;
+  top: 20px;
+  left: 2px;
 }
 
 /* ===== Main Styles ===== */
 /* ===== First Area (h2 and scroll text) ===== */
 main {
-  position: relative;
+  /* ===== Image Gallery  ===== */
+  /* ===== Text "Idea" + image ===== */
+  /* ===== Text h2 ===== */
+  /* ===== 4 short texes with their own logo-image ===== */
+  /* ===== Main Styles ===== */
+}
+main .h2PositionAbsulute {
+  margin: -300px 0 150px 150px;
 }
 main .h2PositionAbsulute h2 {
-  position: absolute;
-  top: -300px;
-  left: 150px;
   font-size: 4rem;
+}
+main .h2PositionAbsulute p {
+  padding-top: 10px;
+  padding-bottom: 100px;
 }
 main .imageGallery {
   margin: 10vh 0 10vh 0;
@@ -93,7 +133,7 @@ main .afterSeveralWeeksText h2 {
   padding: 150px;
 }
 main .styleFourTexts {
-  margin: 25px 150px;
+  margin: 20px 150px;
   display: flex;
   flex-direction: column;
 }
@@ -107,6 +147,74 @@ main .styleFourTexts h3 {
 }
 main .styleFourTexts span {
   padding-right: 15px;
+}
+main .textAreYouReady {
+  text-align: center;
+  margin: 15vh 0 20vh 0;
+}
+main .textAreYouReady h2 {
+  padding: 50px 0 30px 0;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+}
+footer #footerText {
+  margin-bottom: 2rem;
+}
+footer #footerText h2 {
+  margin-bottom: 1.5rem;
+}
+footer #mail {
+  padding: 20px 100px;
+  font-size: 1.4rem;
+  border: none;
+  box-shadow: 0px 10px 18px 4px #dddddd;
+}
+footer #subscribe {
+  display: block;
+  margin: 40px auto 50px auto;
+  font-size: 1.2rem;
+  color: #FFF;
+  background-color: #ff3571;
+  border: none;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+footer #subscribe:hover {
+  background: linear-gradient(40deg, rgb(221, 13, 75) 0%, rgb(95, 89, 210) 80%);
+}
+
+/* ===== Media Queries fpr Smartphones ===== */
+@media only screen and (max-width: 576px) {
+  header .fallingManImage {
+    width: 250px;
+  }
+  header .backroundImage {
+    width: 250px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+    padding: 25px 0 0 90px;
+  }
+  header #logo {
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    width: 35px;
+  }
+  main .h2PositionAbsulute {
+    margin: 0px 0 150px 40px;
+  }
+  main .h2PositionAbsulute h2 {
+    font-size: 2rem;
+    max-width: 30vw;
+    padding-left: 150px;
+  }
+  main .h2PositionAbsulute p {
+    width: 70vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
